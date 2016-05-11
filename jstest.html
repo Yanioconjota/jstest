@@ -1,0 +1,63 @@
+<html>
+  <head></head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    </script>
+    <script type="text/javascript">
+      // var myObj = {
+      //   a : 'a',
+      //   b : 'b'
+      // }
+      // myObj.c = 1;
+      // console.log(myObj);
+      // Object.freeze(myObj);
+      // myObj.d = 2;
+      // console.log(myObj);
+      // function hello() {
+      //   this.a = 'a';
+      //   return arguments;
+      // };
+      // var o = new hello();
+      // console.log(o,o.a);
+      // var o = hello.apply(this,[1,2,3]);
+      // var o = hello.call(this,1,2,3);
+      // var o = hello.bind(hello());
+      // console.log(o);
+    var playersApp = function (){
+          var PlayerService = {
+            getPlayerTeamId: function(playerId) {
+              var promise = $.ajax({
+                url: "./player/players.json"
+              });
+
+            promise.success(
+              function(data){
+               console.log(data.playerId,data.name);
+              }
+            );
+            },
+            getPlayers: function(teamId, callback) {
+              $.ajax({
+                url: "./team/teams.json",
+                success: callback
+              });
+            }
+          },
+
+        PlayerDetailsController = {
+          playerId: 8,
+          showTeammatesClick: function() {
+            console.log(PlayerService.getPlayerTeamId(this.playerId));
+
+              //PlayerService.getPlayers(teamId);
+          }
+        };
+      return PlayerDetailsController;
+    }();
+
+      playersApp.showTeammatesClick();
+
+    </script>
+  </body>
+</html>

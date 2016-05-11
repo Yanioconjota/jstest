@@ -1,0 +1,24 @@
+{
+  "name": "jstest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ajaxpromise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Yanioconjota/jstest.git"
+  },
+  "author": "Janio Isacura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yanioconjota/jstest/issues"
+  },
+  "homepage": "https://github.com/Yanioconjota/jstest#readme",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "jquery": "^1.12.3"
+  }
+}

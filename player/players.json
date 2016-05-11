@@ -1,0 +1,24 @@
+{
+  "playerId" : 1,
+  "name"   : "Loki"
+},
+{
+  "playerId" : 1,
+  "name"   : "Thor"
+},
+{
+  "playerId" : 2,
+  "name"   : "Heimdall"
+},
+{
+  "playerId" : 3,
+  "name"   : "Ragnarok"
+},
+{
+  "playerId" : 4,
+  "name"   : "Ragnarok"
+},
+{
+  "playerId" : 5,
+  "name"   : "Ragnarok"
+}
